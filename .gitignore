@@ -1,2 +1,6 @@
 # File environment
-.env
+# .env
+
+# pychace
+__pychace__*
+nutrify_multi_rf.joblib
