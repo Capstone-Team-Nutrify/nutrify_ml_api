@@ -46,16 +46,36 @@ def load_model_and_data():
     return model, makanan_df, kolom_nutrisi, penyakit_cols
 
 def prediksi_status_makanan(nama_makanan, df, fitur_cols, model, label_cols):
+    # Coba cari makanan dengan exact match
     rows = df[df["makanan"].str.lower() == nama_makanan.lower()]
+    
+    # Jika tidak ditemukan, coba cari dengan partial match
     if rows.empty:
-        return {col: None for col in label_cols}  # makanan tidak ditemukan
+        print("error ke 1")
+        rows = df[df["makanan"].str.lower().str.contains(nama_makanan.lower())]
+    
+    # Jika masih tidak ditemukan, kembalikan error
+    if rows.empty:
+        print("error ke 2")
+        return {
+            "error": True,
+            "message": f"Makanan '{nama_makanan}' tidak ditemukan dalam database",
+            "predictions": {col: None for col in label_cols}
+        }
 
-    baris = rows[fitur_cols].values.astype("float32")
-    preds = model.predict(baris)
+    # Ambil baris pertama jika ada multiple matches
+    baris = rows.iloc[0][fitur_cols].values.astype("float32")
+    preds = model.predict(baris.reshape(1, -1))
 
     hasil = {}
     for i, label in enumerate(label_cols):
         predicted_index = np.argmax(preds[i][0])
         label_map = {0: "Konsumsi Wajar", 1: "Netral", 2: "Waspada"}
         hasil[label] = label_map.get(predicted_index, "Tidak diketahui")
-    return hasil
+
+    print("berhasil")    
+    return {
+        "error": False,
+        "message": "Prediksi berhasil",
+        "predictions": hasil
+    }
