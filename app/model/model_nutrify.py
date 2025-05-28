@@ -16,10 +16,15 @@
 import pandas as pd
 import numpy as np
 import tensorflow as tf
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # lokasi file ini
+MODEL_PATH = os.path.join(BASE_DIR, "./model_mlp.h5")
+CSV_PATH = os.path.join(BASE_DIR, "../data/makanan.csv")
 
 def load_model_and_data():
-    model = tf.keras.models.load_model("nutrify_multi_model.h5")
-    makanan_df = pd.read_csv("../data/makanan.csv")
+    model = tf.keras.models.load_model(MODEL_PATH)
+    makanan_df = pd.read_csv(CSV_PATH)
 
     # Sesuaikan dengan kolom nutrisi aktual
     kolom_nutrisi = [
