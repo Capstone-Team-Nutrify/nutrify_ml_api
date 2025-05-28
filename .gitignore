@@ -2,5 +2,7 @@
 # .env
 
 # pychace
-__pychace__*
+__pychace__/
 nutrify_multi_rf.joblib
+model_mlp.h5
+venv/
