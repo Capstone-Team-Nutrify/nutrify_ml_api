@@ -51,6 +51,7 @@ def get_disease_status(prediction):
     }
     return status_map.get(prediction, {"status": "Tidak diketahui", "badge": "secondary"})
 
+
 def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
     """
     Memprediksi status kombinasi makanan
@@ -103,9 +104,13 @@ def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
             "status": status_info["status"],
             "badge": status_info["badge"]
         })
+        
+    formatted_makanan = [
+    {"bahan": nama, "dose": berat} for nama, berat in valid_makanan
+]
     
     return {
-        "makanan": valid_makanan,
+        "makanan": formatted_makanan,
         "total_nutrisi": total_nutrisi,
         "disease_rate": disease_rate
     }

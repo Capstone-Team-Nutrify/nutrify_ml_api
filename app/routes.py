@@ -22,7 +22,7 @@ def predict_route():
         return jsonify({"error": "No makanan provided"}), 400
     
     try:
-        respone = handle_prediction(data["makanan"])
+        respone = handle_prediction(data)
         result = {
             "status": 200,
             "message": "success",
