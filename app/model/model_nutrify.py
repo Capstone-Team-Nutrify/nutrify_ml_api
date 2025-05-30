@@ -1,25 +1,10 @@
-# import joblib
-# import numpy as np
-# import os
-
-# BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # lokasi file ini
-# MODEL_PATH = os.path.join(BASE_DIR, "./nutrify_multi_rf.joblib")
-
-# model = joblib.load(MODEL_PATH)
-
-
-# def ml_model(input_makanan):
-#     arr = np.array(input_makanan).reshape(1, -1)
-#     return model.predict(arr).tolist()
-
-
 import pandas as pd
 import numpy as np
 import tensorflow as tf
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # lokasi file ini
-MODEL_PATH = os.path.join(BASE_DIR, "./model_mlp.h5")
+MODEL_PATH = os.path.join(BASE_DIR, "./nutrify_multi_model.h5")
 CSV_PATH = os.path.join(BASE_DIR, "../data/makanan.csv")
 
 def load_model_and_data():
@@ -28,10 +13,10 @@ def load_model_and_data():
 
     # Sesuaikan dengan kolom nutrisi aktual
     kolom_nutrisi = [
-        "gula", "serat", "protein", "lemak", "karbohidrat", "vitamin_a", "vitamin_c",
+        "gula", "serat", "protein", "lemak", "karbohidrat", "vitamin_A", "vitamin_C",
         "zat_besi", "kalsium", "natrium", "magnesium", "kolesterol", "kalori", "fosfor",
-        "kalium", "zinc", "air", "vitamin_b1", "vitamin_b11", "vitamin_b12", "vitamin_b2",
-        "vitamin_b3", "vitamin_b5", "vitamin_b6", "vitamin_d", "vitamin_e", "vitamin_k"
+        "kalium", "zinc", "air", "vitamin_B1", "vitamin_B11", "vitamin_B12", "vitamin_B2",
+        "vitamin_B3", "vitamin_B5", "vitamin_B6", "vitamin_D", "vitamin_E", "vitamin_K"
     ]
     
     # Sesuaikan dengan kolom penyakit hasil output model
@@ -45,37 +30,82 @@ def load_model_and_data():
 
     return model, makanan_df, kolom_nutrisi, penyakit_cols
 
-def prediksi_status_makanan(nama_makanan, df, fitur_cols, model, label_cols):
-    # Coba cari makanan dengan exact match
+def get_nutrition_values(nama_makanan, berat, df, fitur_cols):
+    """Mendapatkan nilai nutrisi untuk makanan tertentu"""
     rows = df[df["makanan"].str.lower() == nama_makanan.lower()]
-    
-    # Jika tidak ditemukan, coba cari dengan partial match
     if rows.empty:
-        print("error ke 1")
         rows = df[df["makanan"].str.lower().str.contains(nama_makanan.lower())]
-    
-    # Jika masih tidak ditemukan, kembalikan error
     if rows.empty:
-        print("error ke 2")
-        return {
-            "error": True,
-            "message": f"Makanan '{nama_makanan}' tidak ditemukan dalam database",
-            "predictions": {col: None for col in label_cols}
-        }
+        return None
+    
+    # Ambil nilai nutrisi dan sesuaikan dengan berat
+    nutrisi = rows.iloc[0][fitur_cols].values.astype("float32")
+    return nutrisi * (berat / 100.0)
 
-    # Ambil baris pertama jika ada multiple matches
-    baris = rows.iloc[0][fitur_cols].values.astype("float32")
-    preds = model.predict(baris.reshape(1, -1))
+def get_disease_status(prediction):
+    """Mengkonversi prediksi ke status dan badge"""
+    status_map = {
+        0: {"status": "Konsumsi Wajar", "badge": "success"},
+        1: {"status": "Netral", "badge": "secondary"},
+        2: {"status": "Waspada", "badge": "danger"}
+    }
+    return status_map.get(prediction, {"status": "Tidak diketahui", "badge": "secondary"})
 
-    hasil = {}
-    for i, label in enumerate(label_cols):
+def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
+    """
+    Memprediksi status kombinasi makanan
+    
+    Args:
+        makanan_list (list): List of tuples (nama_makanan, berat)
+        df (DataFrame): Database makanan
+        fitur_cols (list): List kolom nutrisi
+        model: Model yang sudah dilatih
+        label_cols (list): List kolom penyakit
+    
+    Returns:
+        list: Hasil prediksi untuk kombinasi makanan
+    """
+    if not isinstance(makanan_list, list):
+        return []
+
+    # Hitung total nutrisi
+    total_nutrisi = {nutrisi: 0.0 for nutrisi in fitur_cols}
+    valid_makanan = []
+    
+    for makanan, berat in makanan_list:
+        try:
+            berat = float(berat)
+            if berat <= 0:
+                continue
+                
+            nutrisi = get_nutrition_values(makanan, berat, df, fitur_cols)
+            if nutrisi is not None:
+                for i, nutrisi_name in enumerate(fitur_cols):
+                    total_nutrisi[nutrisi_name] += nutrisi[i]
+                valid_makanan.append((makanan, berat))
+        except (ValueError, TypeError):
+            continue
+    
+    if not valid_makanan:
+        return []
+
+    # Prediksi penyakit berdasarkan total nutrisi
+    total_nutrisi_array = np.array([total_nutrisi[nutrisi] for nutrisi in fitur_cols])
+    preds = model.predict(total_nutrisi_array.reshape(1, -1))
+    
+    # Format hasil prediksi penyakit
+    disease_rate = []
+    for i, penyakit in enumerate(label_cols):
         predicted_index = np.argmax(preds[i][0])
-        label_map = {0: "Konsumsi Wajar", 1: "Netral", 2: "Waspada"}
-        hasil[label] = label_map.get(predicted_index, "Tidak diketahui")
-
-    print("berhasil")    
+        status_info = get_disease_status(predicted_index)
+        disease_rate.append({
+            "penyakit": penyakit,
+            "status": status_info["status"],
+            "badge": status_info["badge"]
+        })
+    
     return {
-        "error": False,
-        "message": "Prediksi berhasil",
-        "predictions": hasil
+        "makanan": valid_makanan,
+        "total_nutrisi": total_nutrisi,
+        "disease_rate": disease_rate
     }

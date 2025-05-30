@@ -1,0 +1,1199 @@
+[
+  {
+    "nama_makanan": "Rendang",
+    "asal": "Sumatera Barat",
+    "deskripsi": "Rendang adalah masakan tradisional Minangkabau yang terkenal dengan rasa kaya rempah dan proses memasak yang panjang hingga menghasilkan daging yang empuk dan bumbu yang meresap.",
+    "foto_url": "https://drive.google.com/file/d/1_EssWyGEWmWq66RtKCDP3iica_mXMWCe/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Daging sapi tanpa lemak", "jumlah": "1 kg"},
+      {"nama": "Santan dari kelapa tua", "jumlah": "1 liter"},
+      {"nama": "Cabai merah keriting", "jumlah": "250 gram"},
+      {"nama": "Bawang merah", "jumlah": "200 gram"},
+      {"nama": "Bawang putih", "jumlah": "100 gram"},
+      {"nama": "Serai", "jumlah": "4pbatang"},
+      {"nama": "Lengkuas", "jumlah": "4 cm"},
+      {"nama": "Jahe", "jumlah": "4 cm"},
+      {"nama": "Kunyit", "jumlah": "3 cm"},
+      {"nama": "Daun jeruk", "jumlah": "10 lembar"},
+      {"nama": "Daun kunyit", "jumlah": "2 lembar"},
+      {"nama": "Asam kandis", "jumlah": "2 potong"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 195,
+      "lemak": 11.07,
+      "karbohidrat": 4.49,
+      "gula": 1.31,
+      "protein": 19.68,
+      "serat": 1.7,
+      "kolesterol": 29,
+      "natrium": 184,
+      "air": 9.0,
+      "vitamin": {
+        "vitamin_A": 0.2,
+        "vitamin_B1": 0.05,
+        "vitamin_B2": 0.1,
+        "vitamin_B3": 4.5,
+        "vitamin_B5": 0.9,
+        "vitamin_B6": 0.4,
+        "vitamin_B9": 10,
+        "vitamin_B12": 1.5,
+        "vitamin_C": 0,
+        "vitamin_D": 0,
+        "vitamin_E": 0.2,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 474,
+        "zat_besi": 14.9,
+        "magnesium": 25,
+        "fosfor": 211,
+        "kalium": 373,
+        "zinc": 5.5
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "WASPADA",
+        "catatan": "Kandungan lemak jenuh dan kolesterol yang tinggi dapat meningkatkan risiko penyakit jantung jika dikonsumsi berlebihan."
+      },
+      {
+        "penyakit": "Hipertensi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Kandungan natrium yang cukup tinggi dapat berkontribusi pada tekanan darah tinggi jika tidak dikontrol."
+      }
+    ]
+  },
+
+  {
+    "nama_makanan": "Sop Konro",
+    "asal": "Makassar, Sulawesi Selatan",
+    "deskripsi": "Sop Konro adalah sup iga sapi khas Makassar yang dimasak dengan aneka rempah seperti kayu manis, kluwek, asam jawa, dan ketumbar. Kuahnya berwarna gelap dan kaya rasa, biasanya disajikan dengan nasi hangat, sambal, dan jeruk nipis. Sop Konro populer sebagai hidangan utama di berbagai acara penting dan mudah ditemukan di warung makan khas Makassar.",
+    "foto_url": "https://drive.google.com/file/d/1_Fo1ZYrR-5yPYwB5cDn0mZMBevuV_r7P/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Iga sapi", "jumlah": "1.2 kg"},
+      {"nama": "Air", "jumlah": "2.5 liter"},
+      {"nama": "Kemiri sangrai", "jumlah": "4 butir"},
+      {"nama": "Pala sangrai", "jumlah": "1.5 cm"},
+      {"nama": "Lada butiran sangrai", "jumlah": "1 sdm"},
+      {"nama": "Ketumbar butiran sangrai", "jumlah": "1.5 sdm"},
+      {"nama": "Jinten sangrai", "jumlah": "1 sdm"},
+      {"nama": "Bawang merah", "jumlah": "12 siung"},
+      {"nama": "Bawang putih", "jumlah": "7 siung"},
+      {"nama": "Jahe", "jumlah": "3 cm"},
+      {"nama": "Lengkuas", "jumlah": "4 cm"},
+      {"nama": "Serai", "jumlah": "2 batang"},
+      {"nama": "Kluwek", "jumlah": "4 buah"},
+      {"nama": "Kelapa parut sangrai", "jumlah": "200 gram"},
+      {"nama": "Kayu manis", "jumlah": "6 cm"},
+      {"nama": "Daun salam", "jumlah": "4 lembar"},
+      {"nama": "Asam jawa", "jumlah": "1 sdt"},
+      {"nama": "Garam", "jumlah": "1 sdm"},
+      {"nama": "Gula merah", "jumlah": "25 gram"},
+      {"nama": "Kaldu bubuk", "jumlah": "0.5 sdm"},
+      {"nama": "Minyak goreng", "jumlah": "secukupnya"},
+      {"nama": "Sambal cabe rawit merah", "jumlah": "secukupnya"},
+      {"nama": "Jeruk nipis", "jumlah": "secukupnya"},
+      {"nama": "Bawang merah goreng", "jumlah": "secukupnya"},
+      {"nama": "Daun bawang", "jumlah": "secukupnya"},
+      {"nama": "Seledri", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 71,
+      "lemak": 2.6,
+      "karbohidrat": 4.5,
+      "gula": 0,
+      "protein": 7.4,
+      "serat": 0,
+      "kolesterol": 0,
+      "natrium": 184,
+      "air": 85,
+      "vitamin": {
+        "vitamin_A": 0,
+        "vitamin_B1": 0.12,
+        "vitamin_B2": 0.02,
+        "vitamin_B3": 10.9,
+        "vitamin_B5": 0,
+        "vitamin_B6": 0,
+        "vitamin_B9": 0,
+        "vitamin_B12": 0,
+        "vitamin_C": 0,
+        "vitamin_D": 0,
+        "vitamin_E": 0,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 17,
+        "zat_besi": 4.6,
+        "magnesium": 0,
+        "fosfor": 60,
+        "kalium": 25,
+        "zinc": 1.3
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Hipertensi",
+        "peringatan": "WASPADA",
+        "catatan": "Kandungan natrium cukup tinggi, konsumsi berlebihan dapat memicu tekanan darah tinggi."
+      },
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Iga sapi mengandung lemak jenuh, batasi konsumsi bagi penderita kolesterol tinggi."
+      }
+    ]
+  },
+
+  {
+    "nama_makanan": "Ayam Geprek",
+    "asal": "Yogyakarta",
+    "deskripsi": "Ayam geprek adalah hidangan ayam goreng tepung yang diulek dengan sambal pedas, populer sebagai makanan cepat saji di Indonesia.",
+    "foto_url": "https://drive.google.com/file/d/1_GrSyopuvYx7ZaG_eG0CFqF28AutSATd/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Dada ayam tanpa kulit", "jumlah": "100 gram"},
+      {"nama": "Tepung terigu", "jumlah": "50 gram"},
+      {"nama": "Minyak goreng", "jumlah": "secukupnya"},
+      {"nama": "Cabai merah", "jumlah": "10 buah"},
+      {"nama": "Bawang putih", "jumlah": "3 siung"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 263,
+      "lemak": 17.99,
+      "karbohidrat": 7.6,
+      "gula": 0.78,
+      "protein": 17.61,
+      "serat": 0.8,
+      "kolesterol": 139,
+      "natrium": 460,
+      "air": 50.0,
+      "vitamin": {
+        "vitamin_A": 0.1,
+        "vitamin_B1": 0.05,
+        "vitamin_B2": 0.1,
+        "vitamin_B3": 5.0,
+        "vitamin_B5": 1.0,
+        "vitamin_B6": 0.5,
+        "vitamin_B9": 10,
+        "vitamin_B12": 0.3,
+        "vitamin_C": 2.0,
+        "vitamin_D": 0.0,
+        "vitamin_E": 0.2,
+        "vitamin_K": 0.0
+      },
+      "mineral": {
+        "kalsium": 20,
+        "zat_besi": 1.0,
+        "magnesium": 25,
+        "fosfor": 200,
+        "kalium": 216,
+        "zinc": 1.5
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "WASPADA",
+        "catatan": "Kandungan lemak jenuh dan kolesterol yang tinggi dapat meningkatkan risiko penyakit jantung jika dikonsumsi berlebihan."
+      },
+      {
+        "penyakit": "Hipertensi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Kandungan natrium yang tinggi dapat berkontribusi pada tekanan darah tinggi jika tidak dikontrol."
+      }
+    ]
+  },
+
+  {
+    "nama_makanan": "Roti Bakar",
+    "asal": "-",
+    "deskripsi": "Roti bakar adalah roti panggang yang biasanya disajikan dengan berbagai topping seperti mentega, selai, keju, atau cokelat.",
+    "foto_url": "https://drive.google.com/file/d/1_PH_mVl3WTlic4uk7s-YhUPMKUZFv72-/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Roti tawar", "jumlah": "2 lembar"},
+      {"nama": "Mentega", "jumlah": "1 sendok makan"},
+      {"nama": "Selai cokelat", "jumlah": "1 sendok makan"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 313,
+      "lemak": 4.0,
+      "karbohidrat": 54.4,
+      "gula": 10.0,
+      "protein": 9.0,
+      "serat": 1.0,
+      "kolesterol": 0,
+      "natrium": 145,
+      "air": 30.0,
+      "vitamin": {
+        "vitamin_A": 0.0,
+        "vitamin_B1": 0.1,
+        "vitamin_B2": 0.1,
+        "vitamin_B3": 1.5,
+        "vitamin_B5": 0.5,
+        "vitamin_B6": 0.1,
+        "vitamin_B9": 20,
+        "vitamin_B12": 0.0,
+        "vitamin_C": 0.0,
+        "vitamin_D": 0.0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0.0
+      },
+      "mineral": {
+        "kalsium": 50,
+        "zat_besi": 1.5,
+        "magnesium": 20,
+        "fosfor": 100,
+        "kalium": 51,
+        "zinc": 0.5
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Diabetes",
+        "peringatan": "WASPADA",
+        "catatan": "Kandungan karbohidrat dan gula yang tinggi dapat memengaruhi kadar gula darah jika dikonsumsi berlebihan."
+      }
+    ]
+  },
+
+  {
+    "nama_makanan": "Kopi Susu",
+    "asal": "-",
+    "deskripsi": "Kopi susu adalah minuman yang terdiri dari campuran kopi dan susu, sering kali ditambahkan gula untuk menambah rasa manis.",
+    "foto_url": "https://drive.google.com/file/d/1_QgKrkVixgtrbPvWAQR0XOBAhb3zhmmu/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Kopi bubuk", "jumlah": "1 sendok teh"},
+      {"nama": "Susu kental manis", "jumlah": "2 sendok makan"},
+      {"nama": "Air panas", "jumlah": "200 ml"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 17,
+      "lemak": 0.14,
+      "karbohidrat": 7.14,
+      "gula": 6.0,
+      "protein": 0.31,
+      "serat": 0.0,
+      "kolesterol": 0,
+      "natrium": 4,
+      "air": 92.0,
+      "vitamin": {
+        "vitamin_A": 0.0,
+        "vitamin_B1": 0.0,
+        "vitamin_B2": 0.0,
+        "vitamin_B3": 0.0,
+        "vitamin_B5": 0.0,
+        "vitamin_B6": 0.0,
+        "vitamin_B9": 0.0,
+        "vitamin_B12": 0.0,
+        "vitamin_C": 0.0,
+        "vitamin_D": 0.0,
+        "vitamin_E": 0.0,
+        "vitamin_K": 0.0
+      },
+      "mineral": {
+        "kalsium": 10,
+        "zat_besi": 0.1,
+        "magnesium": 5,
+        "fosfor": 20,
+        "kalium": 35,
+        "zinc": 0.1
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Diabetes",
+        "peringatan": "WASPADA",
+        "catatan": "Kandungan gula yang tinggi dapat memengaruhi kadar gula darah jika dikonsumsi berlebihan."
+      }
+    ]
+  },
+
+  {
+    "nama_makanan": "Papeda",
+    "asal": "Papua, Maluku",
+    "deskripsi": "Papeda adalah makanan pokok khas Papua dan Maluku berupa bubur sagu bertekstur kenyal, lengket, dan berwarna putih bening. Rasanya tawar sehingga biasa disantap bersama ikan kuah kuning atau lauk lain yang gurih dan pedas. Papeda merupakan simbol budaya dan pemersatu masyarakat di wilayah timur Indonesia.",
+    "foto_url": "https://drive.google.com/file/d/1_ReIFgJFSWDnqJonW9vONWy3ZpyJxzJy/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Tepung sagu", "jumlah": "250 gram"},
+      {"nama": "Air matang", "jumlah": "1 liter"},
+      {"nama": "Garam", "jumlah": "secukupnya"},
+      {"nama": "Bawang putih (opsional)", "jumlah": "2 siung"},
+      {"nama": "Kaldu ayam (opsional)", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 61,
+      "lemak": 0.2,
+      "karbohidrat": 14.9,
+      "gula": 0,
+      "protein": 0.3,
+      "serat": 0.5,
+      "kolesterol": 0,
+      "natrium": 1,
+      "air": 84,
+      "vitamin": {
+        "vitamin_A": 0,
+        "vitamin_B1": 0.01,
+        "vitamin_B2": 0,
+        "vitamin_B3": 0,
+        "vitamin_B5": 0,
+        "vitamin_B6": 0,
+        "vitamin_B9": 0,
+        "vitamin_B12": 0,
+        "vitamin_C": 0,
+        "vitamin_D": 0,
+        "vitamin_E": 0,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 27,
+        "zat_besi": 0.6,
+        "magnesium": 10,
+        "fosfor": 13,
+        "kalium": 10,
+        "zinc": 0.1
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Diabetes",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Papeda memiliki indeks glikemik rendah sehingga relatif aman untuk penderita diabetes jika dikonsumsi dalam porsi wajar."
+      },
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Papeda rendah lemak dan tidak mengandung kolesterol."
+      },
+      {
+        "penyakit": "Gangguan Pencernaan",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Kandungan pati resisten dan serat dalam papeda dapat membantu melancarkan pencernaan dan menjaga kesehatan usus."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Pempek",
+    "asal": "Palembang, Sumatra Selatan",
+    "deskripsi": "Pempek adalah makanan khas Palembang berbahan dasar ikan dan tepung sagu, disajikan dengan kuah cuko yang asam pedas.",
+    "foto_url": "https://drive.google.com/file/d/1ZdVsqxsCQQfcey0bIdsdbsHkaoKkDogF/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Ikan tenggiri", "jumlah": "500 gram"},
+      {"nama": "Tepung sagu", "jumlah": "500 gram"},
+      {"nama": "Air", "jumlah": "200 ml"},
+      {"nama": "Telur", "jumlah": "2 butir"},
+      {"nama": "Bawang putih", "jumlah": "4 siung"},
+      {"nama": "Garam", "jumlah": "secukupnya"},
+      {"nama": "Cuko (gula aren, asam jawa, cabai, bawang putih)", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 165,
+      "lemak": 2.5,
+      "karbohidrat": 31,
+      "gula": 2,
+      "protein": 8,
+      "serat": 1,
+      "kolesterol": 35,
+      "natrium": 300,
+      "air": 55,
+      "vitamin": {
+        "vitamin_A": 0.05,
+        "vitamin_B1": 0.08,
+        "vitamin_B2": 0.09,
+        "vitamin_B3": 1.2,
+        "vitamin_B5": 0.4,
+        "vitamin_B6": 0.2,
+        "vitamin_B9": 8,
+        "vitamin_B12": 0.8,
+        "vitamin_C": 0,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 20,
+        "zat_besi": 0.8,
+        "magnesium": 10,
+        "fosfor": 70,
+        "kalium": 120,
+        "zinc": 0.7
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Hipertensi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Kandungan natrium cukup tinggi, batasi konsumsi bagi penderita tekanan darah tinggi."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Gudeg",
+    "asal": "Yogyakarta",
+    "deskripsi": "Gudeg adalah masakan khas Yogyakarta berbahan utama nangka muda dimasak dengan santan dan gula merah, menghasilkan rasa manis dan gurih.",
+    "foto_url": "https://drive.google.com/file/d/1ZhYz2LuDj0oG_guQEhDz91-_SlZPe1BL/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Nangka muda", "jumlah": "1 kg"},
+      {"nama": "Santan", "jumlah": "1 liter"},
+      {"nama": "Gula merah", "jumlah": "200 gram"},
+      {"nama": "Bawang merah", "jumlah": "10 siung"},
+      {"nama": "Bawang putih", "jumlah": "5 siung"},
+      {"nama": "Daun salam", "jumlah": "5 lembar"},
+      {"nama": "Lengkuas", "jumlah": "5 cm"},
+      {"nama": "Telur rebus", "jumlah": "4 butir"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 140,
+      "lemak": 6.5,
+      "karbohidrat": 20,
+      "gula": 8,
+      "protein": 2.5,
+      "serat": 2,
+      "kolesterol": 30,
+      "natrium": 150,
+      "air": 65,
+      "vitamin": {
+        "vitamin_A": 0.01,
+        "vitamin_B1": 0.03,
+        "vitamin_B2": 0.04,
+        "vitamin_B3": 0.7,
+        "vitamin_B5": 0.2,
+        "vitamin_B6": 0.1,
+        "vitamin_B9": 7,
+        "vitamin_B12": 0.5,
+        "vitamin_C": 1,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 30,
+        "zat_besi": 1,
+        "magnesium": 15,
+        "fosfor": 40,
+        "kalium": 110,
+        "zinc": 0.4
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Diabetes",
+        "peringatan": "WASPADA",
+        "catatan": "Rasa manis dari gula merah dapat meningkatkan kadar gula darah jika dikonsumsi berlebihan."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Rawon",
+    "asal": "Jawa Timur",
+    "deskripsi": "Rawon adalah sup daging sapi berkuah hitam khas Jawa Timur, menggunakan kluwek sebagai pewarna dan penambah rasa.",
+    "foto_url": "https://drive.google.com/file/d/1Zhr7KR4B7T-y_akzXMf7e5VRP-fSMOrt/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Daging sapi", "jumlah": "500 gram"},
+      {"nama": "Kluwek", "jumlah": "5 buah"},
+      {"nama": "Bawang merah", "jumlah": "8 siung"},
+      {"nama": "Bawang putih", "jumlah": "4 siung"},
+      {"nama": "Serai", "jumlah": "2 batang"},
+      {"nama": "Lengkuas", "jumlah": "3 cm"},
+      {"nama": "Daun jeruk", "jumlah": "5 lembar"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 110,
+      "lemak": 4,
+      "karbohidrat": 3,
+      "gula": 0.5,
+      "protein": 15,
+      "serat": 1,
+      "kolesterol": 28,
+      "natrium": 180,
+      "air": 75,
+      "vitamin": {
+        "vitamin_A": 0.01,
+        "vitamin_B1": 0.04,
+        "vitamin_B2": 0.06,
+        "vitamin_B3": 2.1,
+        "vitamin_B5": 0.3,
+        "vitamin_B6": 0.2,
+        "vitamin_B9": 6,
+        "vitamin_B12": 1.2,
+        "vitamin_C": 0,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 22,
+        "zat_besi": 1.2,
+        "magnesium": 10,
+        "fosfor": 80,
+        "kalium": 140,
+        "zinc": 1.1
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Daging sapi mengandung kolesterol, batasi konsumsi bagi penderita kolesterol tinggi."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Ayam Betutu",
+    "asal": "Bali",
+    "deskripsi": "Ayam Betutu adalah ayam utuh yang dibumbui rempah khas Bali, dibungkus daun pisang, lalu dipanggang atau dikukus hingga empuk.",
+    "foto_url": "https://drive.google.com/file/d/1ZnYpaGVHGk1w28d1HdzUYyxXDqgyAaWq/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Ayam utuh", "jumlah": "1 ekor"},
+      {"nama": "Bawang merah", "jumlah": "10 siung"},
+      {"nama": "Bawang putih", "jumlah": "6 siung"},
+      {"nama": "Cabe merah", "jumlah": "8 buah"},
+      {"nama": "Serai", "jumlah": "2 batang"},
+      {"nama": "Daun salam", "jumlah": "4 lembar"},
+      {"nama": "Kunyit", "jumlah": "4 cm"},
+      {"nama": "Jahe", "jumlah": "3 cm"},
+      {"nama": "Daun pisang", "jumlah": "secukupnya"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 150,
+      "lemak": 7,
+      "karbohidrat": 2,
+      "gula": 0.5,
+      "protein": 20,
+      "serat": 1,
+      "kolesterol": 65,
+      "natrium": 170,
+      "air": 68,
+      "vitamin": {
+        "vitamin_A": 0.07,
+        "vitamin_B1": 0.06,
+        "vitamin_B2": 0.08,
+        "vitamin_B3": 3.5,
+        "vitamin_B5": 0.7,
+        "vitamin_B6": 0.3,
+        "vitamin_B9": 9,
+        "vitamin_B12": 1.1,
+        "vitamin_C": 1,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 18,
+        "zat_besi": 1.1,
+        "magnesium": 12,
+        "fosfor": 90,
+        "kalium": 130,
+        "zinc": 0.9
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Ayam dengan kulit mengandung kolesterol cukup tinggi."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Lawar",
+    "asal": "Bali",
+    "deskripsi": "Lawar adalah campuran daging cincang, sayuran, parutan kelapa, dan bumbu khas Bali, sering disajikan sebagai lauk.",
+    "foto_url": "https://drive.google.com/file/d/1ZoE8jzFSUEJclfanbH-Oh1yE8j5WVFMQ/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Daging babi/ayam", "jumlah": "250 gram"},
+      {"nama": "Kelapa parut", "jumlah": "100 gram"},
+      {"nama": "Kacang panjang", "jumlah": "100 gram"},
+      {"nama": "Bawang merah", "jumlah": "6 siung"},
+      {"nama": "Bawang putih", "jumlah": "3 siung"},
+      {"nama": "Cabe merah", "jumlah": "5 buah"},
+      {"nama": "Serai", "jumlah": "1 batang"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 180,
+      "lemak": 11,
+      "karbohidrat": 5,
+      "gula": 1,
+      "protein": 13,
+      "serat": 2,
+      "kolesterol": 38,
+      "natrium": 150,
+      "air": 68,
+      "vitamin": {
+        "vitamin_A": 0.03,
+        "vitamin_B1": 0.04,
+        "vitamin_B2": 0.06,
+        "vitamin_B3": 1.6,
+        "vitamin_B5": 0.4,
+        "vitamin_B6": 0.2,
+        "vitamin_B9": 7,
+        "vitamin_B12": 0.9,
+        "vitamin_C": 2,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 25,
+        "zat_besi": 1.2,
+        "magnesium": 15,
+        "fosfor": 60,
+        "kalium": 110,
+        "zinc": 0.8
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Kelapa parut dan daging dapat meningkatkan kadar kolesterol."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Gado-Gado",
+    "asal": "Jakarta",
+    "deskripsi": "Gado-Gado adalah salad sayuran rebus khas Indonesia yang disajikan dengan saus kacang, telur, dan kerupuk.",
+    "foto_url": "https://drive.google.com/file/d/1ZpKQ1ZokMZQYQrYscR5gmT64-pRCQnUC/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Kacang panjang", "jumlah": "100 gram"},
+      {"nama": "Toge", "jumlah": "100 gram"},
+      {"nama": "Wortel", "jumlah": "100 gram"},
+      {"nama": "Kentang", "jumlah": "100 gram"},
+      {"nama": "Telur rebus", "jumlah": "2 butir"},
+      {"nama": "Tahu", "jumlah": "100 gram"},
+      {"nama": "Tempe", "jumlah": "100 gram"},
+      {"nama": "Saus kacang", "jumlah": "100 gram"},
+      {"nama": "Kerupuk", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 120,
+      "lemak": 6,
+      "karbohidrat": 12,
+      "gula": 3,
+      "protein": 5,
+      "serat": 2,
+      "kolesterol": 25,
+      "natrium": 110,
+      "air": 70,
+      "vitamin": {
+        "vitamin_A": 0.09,
+        "vitamin_B1": 0.05,
+        "vitamin_B2": 0.06,
+        "vitamin_B3": 1.5,
+        "vitamin_B5": 0.5,
+        "vitamin_B6": 0.2,
+        "vitamin_B9": 10,
+        "vitamin_B12": 0.7,
+        "vitamin_C": 5,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 30,
+        "zat_besi": 1.1,
+        "magnesium": 17,
+        "fosfor": 60,
+        "kalium": 140,
+        "zinc": 0.7
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Alergi Kacang",
+        "peringatan": "WASPADA",
+        "catatan": "Saus kacang dapat memicu alergi pada penderita alergi kacang."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Nasi Tutug Oncom",
+    "asal": "Tasikmalaya, Jawa Barat",
+    "deskripsi": "Nasi Tutug Oncom adalah nasi yang dicampur oncom goreng dan rempah, menghasilkan rasa gurih dan aroma khas.",
+    "foto_url": "https://drive.google.com/file/d/1ZuVvK37Basti7goLHY_4V-OtMan91H-S/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Nasi putih", "jumlah": "500 gram"},
+      {"nama": "Oncom", "jumlah": "200 gram"},
+      {"nama": "Bawang merah", "jumlah": "5 siung"},
+      {"nama": "Bawang putih", "jumlah": "3 siung"},
+      {"nama": "Cabe merah", "jumlah": "3 buah"},
+      {"nama": "Kencur", "jumlah": "2 cm"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 160,
+      "lemak": 4,
+      "karbohidrat": 28,
+      "gula": 1.5,
+      "protein": 4,
+      "serat": 1,
+      "kolesterol": 0,
+      "natrium": 90,
+      "air": 65,
+      "vitamin": {
+        "vitamin_A": 0.01,
+        "vitamin_B1": 0.05,
+        "vitamin_B2": 0.06,
+        "vitamin_B3": 1.1,
+        "vitamin_B5": 0.2,
+        "vitamin_B6": 0.1,
+        "vitamin_B9": 6,
+        "vitamin_B12": 0,
+        "vitamin_C": 1,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 18,
+        "zat_besi": 0.7,
+        "magnesium": 8,
+        "fosfor": 28,
+        "kalium": 90,
+        "zinc": 0.5
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Diabetes",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Nasi putih memiliki indeks glikemik tinggi."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Karedok",
+    "asal": "Jawa Barat",
+    "deskripsi": "Karedok adalah salad tradisional Sunda dari sayuran mentah seperti kacang panjang, taoge, terong, dan kol, disiram bumbu kacang.",
+    "foto_url": "https://drive.google.com/file/d/1ZvxnrSykHOnV9oTeP94jwIHWaojpEBLb/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Kacang panjang", "jumlah": "100 gram"},
+      {"nama": "Taoge", "jumlah": "100 gram"},
+      {"nama": "Terong", "jumlah": "50 gram"},
+      {"nama": "Kol", "jumlah": "50 gram"},
+      {"nama": "Timun", "jumlah": "50 gram"},
+      {"nama": "Bumbu kacang", "jumlah": "100 gram"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 90,
+      "lemak": 4,
+      "karbohidrat": 10,
+      "gula": 2,
+      "protein": 3,
+      "serat": 2.5,
+      "kolesterol": 0,
+      "natrium": 80,
+      "air": 78,
+      "vitamin": {
+        "vitamin_A": 0.07,
+        "vitamin_B1": 0.04,
+        "vitamin_B2": 0.05,
+        "vitamin_B3": 0.8,
+        "vitamin_B5": 0.2,
+        "vitamin_B6": 0.1,
+        "vitamin_B9": 12,
+        "vitamin_B12": 0,
+        "vitamin_C": 8,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 25,
+        "zat_besi": 0.7,
+        "magnesium": 10,
+        "fosfor": 24,
+        "kalium": 120,
+        "zinc": 0.4
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Alergi Kacang",
+        "peringatan": "WASPADA",
+        "catatan": "Bumbu kacang dapat memicu alergi."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Pecel",
+    "asal": "Jawa Timur",
+    "deskripsi": "Pecel adalah campuran sayuran rebus seperti bayam, kacang panjang, dan taoge, disajikan dengan saus kacang pedas.",
+    "foto_url": "https://drive.google.com/file/d/1ZycDqvVNU1qPYMic2rxJCVxQIgUFQ9PT/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Bayam", "jumlah": "100 gram"},
+      {"nama": "Kacang panjang", "jumlah": "100 gram"},
+      {"nama": "Tauge", "jumlah": "100 gram"},
+      {"nama": "Saus kacang", "jumlah": "100 gram"},
+      {"nama": "Kerupuk", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 95,
+      "lemak": 4,
+      "karbohidrat": 11,
+      "gula": 2,
+      "protein": 3,
+      "serat": 2,
+      "kolesterol": 0,
+      "natrium": 80,
+      "air": 78,
+      "vitamin": {
+        "vitamin_A": 0.1,
+        "vitamin_B1": 0.04,
+        "vitamin_B2": 0.05,
+        "vitamin_B3": 0.9,
+        "vitamin_B5": 0.2,
+        "vitamin_B6": 0.1,
+        "vitamin_B9": 10,
+        "vitamin_B12": 0,
+        "vitamin_C": 6,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 22,
+        "zat_besi": 0.6,
+        "magnesium": 8,
+        "fosfor": 18,
+        "kalium": 90,
+        "zinc": 0.3
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Alergi Kacang",
+        "peringatan": "WASPADA",
+        "catatan": "Saus kacang dapat memicu alergi."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Sayur Asem",
+    "asal": "Jawa Barat",
+    "deskripsi": "Sayur asem adalah sup asam segar berisi kacang panjang, jagung, labu siam, dan melinjo, populer sebagai menu rumahan.",
+    "foto_url": "https://drive.google.com/file/d/1_0RQHDZR8BefZkYiNS7duBMvvO_SIrJf/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Kacang panjang", "jumlah": "100 gram"},
+      {"nama": "Jagung manis", "jumlah": "100 gram"},
+      {"nama": "Labu siam", "jumlah": "100 gram"},
+      {"nama": "Melinjo", "jumlah": "50 gram"},
+      {"nama": "Asam jawa", "jumlah": "20 gram"},
+      {"nama": "Bawang merah", "jumlah": "4 siung"},
+      {"nama": "Bawang putih", "jumlah": "2 siung"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 50,
+      "lemak": 0.5,
+      "karbohidrat": 10,
+      "gula": 2,
+      "protein": 1.5,
+      "serat": 2,
+      "kolesterol": 0,
+      "natrium": 30,
+      "air": 85,
+      "vitamin": {
+        "vitamin_A": 0.04,
+        "vitamin_B1": 0.03,
+        "vitamin_B2": 0.04,
+        "vitamin_B3": 0.5,
+        "vitamin_B5": 0.1,
+        "vitamin_B6": 0.05,
+        "vitamin_B9": 6,
+        "vitamin_B12": 0,
+        "vitamin_C": 6,
+        "vitamin_D": 0,
+        "vitamin_E": 0.05,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 15,
+        "zat_besi": 0.5,
+        "magnesium": 6,
+        "fosfor": 12,
+        "kalium": 70,
+        "zinc": 0.2
+      }
+    },
+    "disease_rate": []
+  },
+  {
+    "nama_makanan": "Soto Ayam",
+    "asal": "Jawa Tengah",
+    "deskripsi": "Soto ayam adalah sup ayam dengan kuah kuning berbumbu kunyit, disajikan dengan soun, telur, dan seledri.",
+    "foto_url": "https://drive.google.com/file/d/1_5_ps8cq4AgjTi5IkvtKD6DiL1QiJFGn/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Ayam", "jumlah": "500 gram"},
+      {"nama": "Soun", "jumlah": "100 gram"},
+      {"nama": "Telur rebus", "jumlah": "2 butir"},
+      {"nama": "Bawang merah", "jumlah": "6 siung"},
+      {"nama": "Bawang putih", "jumlah": "4 siung"},
+      {"nama": "Kunyit", "jumlah": "3 cm"},
+      {"nama": "Serai", "jumlah": "1 batang"},
+      {"nama": "Seledri", "jumlah": "secukupnya"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 90,
+      "lemak": 3,
+      "karbohidrat": 8,
+      "gula": 1,
+      "protein": 7,
+      "serat": 1,
+      "kolesterol": 22,
+      "natrium": 100,
+      "air": 78,
+      "vitamin": {
+        "vitamin_A": 0.06,
+        "vitamin_B1": 0.03,
+        "vitamin_B2": 0.04,
+        "vitamin_B3": 1.2,
+        "vitamin_B5": 0.3,
+        "vitamin_B6": 0.1,
+        "vitamin_B9": 7,
+        "vitamin_B12": 0.8,
+        "vitamin_C": 2,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 18,
+        "zat_besi": 0.8,
+        "magnesium": 9,
+        "fosfor": 30,
+        "kalium": 80,
+        "zinc": 0.5
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Ayam dan telur mengandung kolesterol."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Tinutuan",
+    "asal": "Sulawesi Utara",
+    "deskripsi": "Tinutuan adalah bubur Manado yang terdiri dari beragam sayuran seperti kangkung, bayam, jagung, ubi, dan daun kemangi.",
+    "foto_url": "https://drive.google.com/file/d/1_5g0yrt4baChcm5fRW4CJMuB98z9RxxP/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Beras", "jumlah": "200 gram"},
+      {"nama": "Jagung manis", "jumlah": "100 gram"},
+      {"nama": "Ubi kuning", "jumlah": "100 gram"},
+      {"nama": "Kangkung", "jumlah": "50 gram"},
+      {"nama": "Bayam", "jumlah": "50 gram"},
+      {"nama": "Daun kemangi", "jumlah": "10 gram"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 80,
+      "lemak": 0.5,
+      "karbohidrat": 17,
+      "gula": 2,
+      "protein": 2,
+      "serat": 2,
+      "kolesterol": 0,
+      "natrium": 20,
+      "air": 78,
+      "vitamin": {
+        "vitamin_A": 0.08,
+        "vitamin_B1": 0.04,
+        "vitamin_B2": 0.04,
+        "vitamin_B3": 0.7,
+        "vitamin_B5": 0.1,
+        "vitamin_B6": 0.08,
+        "vitamin_B9": 8,
+        "vitamin_B12": 0,
+        "vitamin_C": 4,
+        "vitamin_D": 0,
+        "vitamin_E": 0.05,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 14,
+        "zat_besi": 0.5,
+        "magnesium": 8,
+        "fosfor": 15,
+        "kalium": 70,
+        "zinc": 0.2
+      }
+    },
+    "disease_rate": []
+  },
+  {
+    "nama_makanan": "Pepes Ikan Kembung",
+    "asal": "Jawa Barat",
+    "deskripsi": "Pepes ikan kembung adalah ikan kembung berbumbu rempah yang dibungkus daun pisang lalu dikukus.",
+    "foto_url": "https://drive.google.com/file/d/1_69gPPc5St5NQbJWyTZlmpc8j8LDsJPP/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Ikan kembung", "jumlah": "300 gram"},
+      {"nama": "Daun kemangi", "jumlah": "20 gram"},
+      {"nama": "Bawang merah", "jumlah": "4 siung"},
+      {"nama": "Bawang putih", "jumlah": "2 siung"},
+      {"nama": "Cabe merah", "jumlah": "3 buah"},
+      {"nama": "Kunyit", "jumlah": "2 cm"},
+      {"nama": "Daun pisang", "jumlah": "secukupnya"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 120,
+      "lemak": 4,
+      "karbohidrat": 1,
+      "gula": 0,
+      "protein": 20,
+      "serat": 0.5,
+      "kolesterol": 50,
+      "natrium": 90,
+      "air": 74,
+      "vitamin": {
+        "vitamin_A": 0.03,
+        "vitamin_B1": 0.05,
+        "vitamin_B2": 0.07,
+        "vitamin_B3": 2.3,
+        "vitamin_B5": 0.6,
+        "vitamin_B6": 0.2,
+        "vitamin_B9": 5,
+        "vitamin_B12": 1.8,
+        "vitamin_C": 1,
+        "vitamin_D": 0.8,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 40,
+        "zat_besi": 1.2,
+        "magnesium": 18,
+        "fosfor": 120,
+        "kalium": 180,
+        "zinc": 0.9
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Asam Urat",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Ikan kembung mengandung purin sedang."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Mie Aceh",
+    "asal": "Aceh",
+    "deskripsi": "Mie Aceh adalah mie kuning tebal dengan bumbu kari khas, berisi daging sapi/udang/kepiting dan sayuran.",
+    "foto_url": "https://drive.google.com/file/d/1_EKkdDEdcLju0PClFsd6T5mwnZymxLXA/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Mie kuning basah", "jumlah": "200 gram"},
+      {"nama": "Daging sapi/udang", "jumlah": "100 gram"},
+      {"nama": "Kol", "jumlah": "50 gram"},
+      {"nama": "Tomat", "jumlah": "1 buah"},
+      {"nama": "Bawang merah", "jumlah": "4 siung"},
+      {"nama": "Bawang putih", "jumlah": "2 siung"},
+      {"nama": "Cabe merah", "jumlah": "3 buah"},
+      {"nama": "Kari bubuk", "jumlah": "1 sdm"},
+      {"nama": "Garam", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 170,
+      "lemak": 4,
+      "karbohidrat": 28,
+      "gula": 2,
+      "protein": 6,
+      "serat": 1,
+      "kolesterol": 22,
+      "natrium": 210,
+      "air": 65,
+      "vitamin": {
+        "vitamin_A": 0.02,
+        "vitamin_B1": 0.05,
+        "vitamin_B2": 0.06,
+        "vitamin_B3": 1.1,
+        "vitamin_B5": 0.2,
+        "vitamin_B6": 0.1,
+        "vitamin_B9": 7,
+        "vitamin_B12": 0.5,
+        "vitamin_C": 2,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 20,
+        "zat_besi": 0.7,
+        "magnesium": 8,
+        "fosfor": 30,
+        "kalium": 80,
+        "zinc": 0.4
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Hipertensi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Mie instan atau mie basah sering mengandung natrium cukup tinggi."
+      }
+    ]
+  },
+  {
+    "nama_makanan": "Sate Ayam",
+    "asal": "Madura",
+    "deskripsi": "Sate ayam adalah daging ayam tusuk yang dibakar dan disajikan dengan bumbu kacang dan lontong.",
+    "foto_url": "https://drive.google.com/file/d/1ZbnnatkdfRha_WkbhJVYpisARfCf5wbk/view?usp=drive_link",
+    "bahan": [
+      {"nama": "Daging ayam", "jumlah": "400 gram"},
+      {"nama": "Bumbu kacang", "jumlah": "100 gram"},
+      {"nama": "Lontong", "jumlah": "200 gram"},
+      {"nama": "Kecap manis", "jumlah": "3 sdm"},
+      {"nama": "Bawang goreng", "jumlah": "secukupnya"}
+    ],
+    "nutrisi_per_100g": {
+      "kalori": 180,
+      "lemak": 8,
+      "karbohidrat": 14,
+      "gula": 3,
+      "protein": 12,
+      "serat": 1,
+      "kolesterol": 35,
+      "natrium": 170,
+      "air": 65,
+      "vitamin": {
+        "vitamin_A": 0.02,
+        "vitamin_B1": 0.06,
+        "vitamin_B2": 0.07,
+        "vitamin_B3": 2.2,
+        "vitamin_B5": 0.4,
+        "vitamin_B6": 0.2,
+        "vitamin_B9": 8,
+        "vitamin_B12": 0.7,
+        "vitamin_C": 0,
+        "vitamin_D": 0,
+        "vitamin_E": 0.1,
+        "vitamin_K": 0
+      },
+      "mineral": {
+        "kalsium": 18,
+        "zat_besi": 0.8,
+        "magnesium": 10,
+        "fosfor": 40,
+        "kalium": 90,
+        "zinc": 0.6
+      }
+    },
+    "disease_rate": [
+      {
+        "penyakit": "Kolesterol Tinggi",
+        "peringatan": "Konsumsi Wajar",
+        "catatan": "Daging ayam dan bumbu kacang mengandung kolesterol."
+      }
+    ]
+  }
+]

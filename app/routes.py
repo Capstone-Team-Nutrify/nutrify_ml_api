@@ -26,7 +26,7 @@ def predict_route():
         result = {
             "status": 200,
             "message": "success",
-            "diesease rate": respone
+            "predict": respone
         }
         return jsonify(result), 200
     except Exception as e:
