@@ -6,7 +6,7 @@ load_dotenv()
 
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client.get_default_database()
-collection = db["history"]
+collection = db["predict"]
 
 def save_predict_log(input_makanan, disease_rate_predict):
     document_entry = {
