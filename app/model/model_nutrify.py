@@ -105,12 +105,18 @@ def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
             "badge": status_info["badge"]
         })
         
+    rounded_nutrisi = {k: round(v, 2) for k, v in total_nutrisi.items()}
+        
     formatted_makanan = [
-    {"bahan": nama, "dose": berat} for nama, berat in valid_makanan
-]
+        {
+            "bahan": nama,
+            "dose": int(berat) if float(berat).is_integer() else round(berat, 2)
+        }
+        for nama, berat in valid_makanan
+    ]
     
     return {
         "makanan": formatted_makanan,
-        "total_nutrisi": total_nutrisi,
+        "total_nutrisi": rounded_nutrisi,
         "disease_rate": disease_rate
     }
