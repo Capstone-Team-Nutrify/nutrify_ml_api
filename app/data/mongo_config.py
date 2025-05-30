@@ -8,10 +8,9 @@ client = MongoClient(os.getenv("MONGO_URI"))
 db = client.get_default_database()
 collection = db["predict"]
 
-def save_predict_log(input_makanan, disease_rate_predict):
+def save_predict_log(disease_rate_predict):
     document_entry = {
-        "makanan": input_makanan,
-        "disease_rate": disease_rate_predict
+        "predict": disease_rate_predict
     }
     collection.insert_one(document_entry)
 

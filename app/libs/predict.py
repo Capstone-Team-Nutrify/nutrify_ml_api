@@ -29,6 +29,6 @@ def handle_prediction(input_makanan):
     prediction = prediksi_kombinasi_makanan(makanan_list, makanan_df, kolom_nutrisi, model, penyakit_cols)
     
     # Save prediction log
-    # save_predict_log(input_makanan, prediction)
+    save_predict_log(prediction)
     
     return prediction

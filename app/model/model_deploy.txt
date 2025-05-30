@@ -1,3 +1,0 @@
-Link model deploy (.joblib) :
-
-https://drive.google.com/file/d/17-CtnNDShiwIX90ZYzcEjIJD5P5l19ua/view?usp=sharing
