@@ -33,8 +33,10 @@ def load_model_and_data():
 def get_nutrition_values(nama_makanan, berat, df, fitur_cols):
     """Mendapatkan nilai nutrisi untuk makanan tertentu"""
     rows = df[df["makanan"].str.lower() == nama_makanan.lower()]
+    
     if rows.empty:
         rows = df[df["makanan"].str.lower().str.contains(nama_makanan.lower())]
+        
     if rows.empty:
         return None
     
@@ -43,12 +45,14 @@ def get_nutrition_values(nama_makanan, berat, df, fitur_cols):
     return nutrisi * (berat / 100.0)
 
 def get_disease_status(prediction):
+    
     """Mengkonversi prediksi ke status dan badge"""
     status_map = {
         0: {"status": "Konsumsi Wajar", "badge": "success"},
         1: {"status": "Netral", "badge": "secondary"},
         2: {"status": "Waspada", "badge": "danger"}
     }
+    
     return status_map.get(prediction, {"status": "Tidak diketahui", "badge": "secondary"})
 
 
@@ -66,6 +70,7 @@ def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
     Returns:
         list: Hasil prediksi untuk kombinasi makanan
     """
+    
     if not isinstance(makanan_list, list):
         return []
 
@@ -76,14 +81,17 @@ def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
     for makanan, berat in makanan_list:
         try:
             berat = float(berat)
+            
             if berat <= 0:
                 continue
                 
             nutrisi = get_nutrition_values(makanan, berat, df, fitur_cols)
+            
             if nutrisi is not None:
                 for i, nutrisi_name in enumerate(fitur_cols):
                     total_nutrisi[nutrisi_name] += nutrisi[i]
                 valid_makanan.append((makanan, berat))
+                
         except (ValueError, TypeError):
             continue
     
@@ -96,6 +104,7 @@ def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
     
     # Format hasil prediksi penyakit
     disease_rate = []
+    
     for i, penyakit in enumerate(label_cols):
         predicted_index = np.argmax(preds[i][0])
         status_info = get_disease_status(predicted_index)
@@ -104,9 +113,11 @@ def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
             "status": status_info["status"],
             "badge": status_info["badge"]
         })
-        
+    
+    #   
     rounded_nutrisi = {k: round(v, 2) for k, v in total_nutrisi.items()}
-        
+    
+    #    
     formatted_makanan = [
         {
             "bahan": nama,

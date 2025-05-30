@@ -18,17 +18,18 @@ def index():
 def predict_route():
     data = request.get_json()
     print(data)
-    if not data or "makanan" not in data:
-        return jsonify({"error": "No makanan provided"}), 400
+    
+    if not data or "bahan" not in data:
+        return jsonify({"error": "one or more of the bahan no provided"}), 400
     
     try:
         respone = handle_prediction(data)
         result = {
             "status": 200,
             "message": "success",
+            "description": "success insert to mongodb database",
             "predict": respone
         }
         return jsonify(result), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-    
