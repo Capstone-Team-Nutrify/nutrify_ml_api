@@ -1,0 +1,11 @@
+menv/
+venv/
+
+# Abaikan file dan folder lain yang tidak diperlukan
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.git
+.gitignore
+.idea/
