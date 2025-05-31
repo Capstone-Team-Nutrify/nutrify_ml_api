@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . ./
 
 # Tentukan port (opsional, hanya dokumentasi)
-EXPOSE 8000
+EXPOSE 8080
 
 # Jalankan aplikasi
 CMD ["python", "main.py"]
