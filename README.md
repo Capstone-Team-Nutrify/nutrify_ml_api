@@ -59,17 +59,17 @@ Coming Soon
 
   ```json
   {
-    "makanan": [
+    "food": [
       {
-        "bahan": "kaldu ayam",
-        "dose": 300
+        "ingredient": "kaldu ayam",
+        "dose": 250
       },
       {
-        "bahan": "wortel mentah",
-        "dose": 150
+        "ingredient": "wortel mentah",
+        "dose": 200
       },
       {
-        "bahan": "nasi jagung",
+        "ingredient": "nasi jagung",
         "dose": 100
       }
     ]
@@ -82,181 +82,180 @@ Coming Soon
   {
     "status": 200,
     "message": "success",
-    "description": "success insert to mongodb database",
     "predict": {
-      "makanan": [
+      "food": [
         {
-          "bahan": "kaldu ayam",
-          "dose": 300
+          "ingredient": "kaldu ayam",
+          "dose": 250
         },
         {
-          "bahan": "wortel mentah",
-          "dose": 150
+          "ingredient": "wortel mentah",
+          "dose": 200
         },
         {
-          "bahan": "nasi jagung",
+          "ingredient": "nasi jagung",
           "dose": 100
         }
       ],
-      "total_nutrisi": {
-        "gula": 7.35,
-        "serat": 2.95,
-        "protein": 5.7,
-        "lemak": 1.95,
-        "karbohidrat": 36.9,
+      "total_nutrition": {
+        "sugar": 8.8,
+        "fiber": 3.8,
+        "protein": 5.5,
+        "fat": 1.75,
+        "carbohydrate": 39.3,
         "vitamin_A": 0.2,
-        "vitamin_C": 186.7,
-        "zat_besi": 44.4,
-        "kalsium": 87.2,
-        "natrium": 38.9,
-        "magnesium": 13.0,
-        "kolesterol": 0.0,
-        "kalori": 183.5,
-        "fosfor": 120.1,
-        "kalium": 626.6,
-        "zinc": 20.8,
-        "air": 771.35,
-        "vitamin_B1": 85.8,
-        "vitamin_B11": 96.0,
-        "vitamin_B12": 51.0,
-        "vitamin_B2": 1.19,
-        "vitamin_B3": 61.7,
-        "vitamin_B5": 8.02,
-        "vitamin_B6": 218.0,
-        "vitamin_D": 5.4,
+        "vitamin_C": 220.45,
+        "iron": 55.15,
+        "calcium": 94.15,
+        "sodium": 50.45,
+        "magnesium": 11.9,
+        "cholesterol": 0.0,
+        "calories": 190.0,
+        "phosphorus": 106.8,
+        "potassium": 543.3,
+        "zinc": 26.7,
+        "water": 683.4,
+        "vitamin_B1": 71.8,
+        "vitamin_B11": 128.0,
+        "vitamin_B12": 68.0,
+        "vitamin_B2": 1.18,
+        "vitamin_B3": 77.6,
+        "vitamin_B5": 8.3,
+        "vitamin_B6": 182.1,
+        "vitamin_D": 7.2,
         "vitamin_E": 35.0,
-        "vitamin_K": 0.6
+        "vitamin_K": 0.8
       },
       "disease_rate": [
         {
-          "penyakit": "Influenza",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Influenza",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Liver",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Liver",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Diabetes",
-          "status": "Waspada",
-          "badge": "danger"
+          "disease": "Diabetes",
+          "status": "Warning",
+          "level": "high"
         },
         {
-          "penyakit": "Anemia",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Anemia",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Diare",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Diare",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Batu_Ginjal",
-          "status": "Waspada",
-          "badge": "danger"
+          "disease": "Batu_Ginjal",
+          "status": "Warning",
+          "level": "high"
         },
         {
-          "penyakit": "Asma",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Asma",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Asam_Lambung",
-          "status": "Waspada",
-          "badge": "danger"
+          "disease": "Asam_Lambung",
+          "status": "Warning",
+          "level": "high"
         },
         {
-          "penyakit": "Serangan_Jantung",
-          "status": "Waspada",
-          "badge": "danger"
+          "disease": "Serangan_Jantung",
+          "status": "Warning",
+          "level": "high"
         },
         {
-          "penyakit": "Asam_Urat",
-          "status": "Waspada",
-          "badge": "danger"
+          "disease": "Asam_Urat",
+          "status": "Warning",
+          "level": "high"
         },
         {
-          "penyakit": "Radang_Paru_paru",
-          "status": "Waspada",
-          "badge": "danger"
+          "disease": "Radang_Paru_paru",
+          "status": "Warning",
+          "level": "high"
         },
         {
-          "penyakit": "Jerawat",
-          "status": "Waspada",
-          "badge": "danger"
+          "disease": "Jerawat",
+          "status": "Warning",
+          "level": "high"
         },
         {
-          "penyakit": "Hepatitis",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Hepatitis",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Wasir",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Wasir",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Sinusitis",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Sinusitis",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Kolesterol",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Kolesterol",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Usus_Buntu",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Usus_Buntu",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Tifus",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Tifus",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Osteoporosis",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Osteoporosis",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Malaria",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Malaria",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Alergi_Dingin",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Alergi_Dingin",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Alergi_Kacang",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Alergi_Kacang",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Alergi_Seafood",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Alergi_Seafood",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Alergi_Susu",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Alergi_Susu",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Alergi_Telur_Ayam",
-          "status": "Netral",
-          "badge": "secondary"
+          "disease": "Alergi_Telur_Ayam",
+          "status": "Neutral",
+          "level": "medium"
         },
         {
-          "penyakit": "Alergi_Buah_Beri",
-          "status": "Konsumsi Wajar",
-          "badge": "success"
+          "disease": "Alergi_Buah_Beri",
+          "status": "Normal Consumption",
+          "level": "normal"
         }
       ]
     }
