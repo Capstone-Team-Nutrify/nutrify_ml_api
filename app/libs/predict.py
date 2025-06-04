@@ -21,56 +21,6 @@ def translate_keys_to_indonesian(data):
         }
     return data
 
-def translate_nutrition_keys_to_english(nutrition_data):
-    """
-    Translate nutrition keys from Indonesian to English.
-
-    Parameters:
-    nutrition_data (dict): Dictionary with Indonesian nutrition names.
-
-    Returns:
-    dict: Dictionary with English nutrition names.
-    """
-    translation_map = {
-        "gula": "sugar",
-        "serat": "fiber",
-        "protein": "protein",
-        "lemak": "fat",
-        "karbohidrat": "carbohydrate",
-        "vitamin_A": "vitamin_A",
-        "vitamin_C": "vitamin_C",
-        "zat_besi": "iron",
-        "kalsium": "calcium",
-        "natrium": "sodium",
-        "magnesium": "magnesium",
-        "kolesterol": "cholesterol",
-        "kalori": "calories",
-        "fosfor": "phosphorus",
-        "kalium": "potassium",
-        "zinc": "zinc",
-        "air": "water",
-        "vitamin_B1": "vitamin_B1",
-        "vitamin_B11": "vitamin_B11",
-        "vitamin_B12": "vitamin_B12",
-        "vitamin_B2": "vitamin_B2",
-        "vitamin_B3": "vitamin_B3",
-        "vitamin_B5": "vitamin_B5",
-        "vitamin_B6": "vitamin_B6",
-        "vitamin_D": "vitamin_D",
-        "vitamin_E": "vitamin_E",
-        "vitamin_K": "vitamin_K"
-    }
-
-    translated = {}
-
-    for key, value in nutrition_data.items():
-        english_key = translation_map.get(key, key)  # default: use original if not found
-        translated[english_key] = value
-
-    return translated
-
-
-
 def parse_makanan_json(data):
     """
     Mengubah input JSON menjadi list of tuple (nama_makanan, berat)
