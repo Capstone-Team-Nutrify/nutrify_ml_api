@@ -46,14 +46,62 @@ def get_nutrition_values(nama_makanan, berat, df, fitur_cols):
 
 def get_disease_status(prediction):
     
-    """Mengkonversi prediksi ke status dan badge"""
+    """Mengkonversi prediksi ke status dan level"""
     status_map = {
-        0: {"status": "Konsumsi Wajar", "badge": "success"},
-        1: {"status": "Netral", "badge": "secondary"},
-        2: {"status": "Waspada", "badge": "danger"}
+        0: {"status": "Normal Consumption", "level": "normal"},
+        1: {"status": "Neutral", "level": "medium"},
+        2: {"status": "Warning", "level": "high"}
     }
     
-    return status_map.get(prediction, {"status": "Tidak diketahui", "badge": "secondary"})
+    return status_map.get(prediction, {"status": "Unknown", "level": "unknown"})
+
+def translate_nutrition_keys_to_english(nutrition_data):
+    """
+    Translate nutrition keys from Indonesian to English.
+
+    Parameters:
+    nutrition_data (dict): Dictionary with Indonesian nutrition names.
+
+    Returns:
+    dict: Dictionary with English nutrition names.
+    """
+    translation_map = {
+        "gula": "sugar",
+        "serat": "fiber",
+        "protein": "protein",
+        "lemak": "fat",
+        "karbohidrat": "carbohydrate",
+        "vitamin_A": "vitamin_A",
+        "vitamin_C": "vitamin_C",
+        "zat_besi": "iron",
+        "kalsium": "calcium",
+        "natrium": "sodium",
+        "magnesium": "magnesium",
+        "kolesterol": "cholesterol",
+        "kalori": "calories",
+        "fosfor": "phosphorus",
+        "kalium": "potassium",
+        "zinc": "zinc",
+        "air": "water",
+        "vitamin_B1": "vitamin_B1",
+        "vitamin_B11": "vitamin_B11",
+        "vitamin_B12": "vitamin_B12",
+        "vitamin_B2": "vitamin_B2",
+        "vitamin_B3": "vitamin_B3",
+        "vitamin_B5": "vitamin_B5",
+        "vitamin_B6": "vitamin_B6",
+        "vitamin_D": "vitamin_D",
+        "vitamin_E": "vitamin_E",
+        "vitamin_K": "vitamin_K"
+    }
+
+    translated = {}
+
+    for key, value in nutrition_data.items():
+        english_key = translation_map.get(key, key)  # default: use original if not found
+        translated[english_key] = value
+
+    return translated
 
 
 def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
@@ -109,25 +157,28 @@ def prediksi_kombinasi_makanan(makanan_list, df, fitur_cols, model, label_cols):
         predicted_index = np.argmax(preds[i][0])
         status_info = get_disease_status(predicted_index)
         disease_rate.append({
-            "penyakit": penyakit,
+            "disease": penyakit,
             "status": status_info["status"],
-            "badge": status_info["badge"]
+            "level": status_info["level"]
         })
     
-    #   
+    # Membulatkan nilai nutrisi ke dua angka di belakang koma
     rounded_nutrisi = {k: round(v, 2) for k, v in total_nutrisi.items()}
     
-    #    
+    # Menerjemahkan key (nama nutrisi) dari bahasa Indonesia ke bahasa Inggris
+    rounded_nutrisi_translate = translate_nutrition_keys_to_english(rounded_nutrisi)
+    
+    # Memformat daftar bahan makanan yang valid, menyertakan nama bahan dan dosisnya
     formatted_makanan = [
         {
-            "bahan": nama,
+            "ingredient": nama,
             "dose": int(berat) if float(berat).is_integer() else round(berat, 2)
         }
         for nama, berat in valid_makanan
     ]
     
     return {
-        "makanan": formatted_makanan,
-        "total_nutrisi": rounded_nutrisi,
+        "food": formatted_makanan,
+        "total_nutrition": rounded_nutrisi_translate,
         "disease_rate": disease_rate
     }

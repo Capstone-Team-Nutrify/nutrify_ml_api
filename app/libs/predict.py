@@ -1,6 +1,26 @@
 from ..model.model_nutrify import load_model_and_data, prediksi_kombinasi_makanan
 from ..data.mongo_config import save_predict_log
 
+def translate_keys_to_indonesian(data):
+    """
+    Mengubah key 'food' menjadi 'makanan', dan 'ingredient' menjadi 'bahan'
+    agar cocok dengan format yang dikenali model.
+    """
+    if "food" in data:
+        makanan_baru = []
+        for item in data["food"]:
+            bahan = item.get("ingredient")
+            takaran = item.get("dose")
+            if bahan is not None and takaran is not None:
+                makanan_baru.append({
+                    "bahan": bahan,
+                    "dose": takaran
+                })
+        return {
+            "makanan": makanan_baru
+        }
+    return data
+
 def parse_makanan_json(data):
     """
     Mengubah input JSON menjadi list of tuple (nama_makanan, berat)
