@@ -1,5 +1,5 @@
 from ..model.model_nutrify import load_model_and_data, prediksi_kombinasi_makanan
-from ..data.mongo_config import save_predict_log
+# from ..data.mongo_config import save_predict_log
 
 def translate_keys_to_indonesian(data):
     """
